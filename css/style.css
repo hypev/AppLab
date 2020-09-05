@@ -326,12 +326,13 @@ iframe.video {
     position: fixed;
     top: 0;
     right: 0;
+    opacity: 0;
     font-size: 40px;
     color: #fff;
     z-index: 5;
 }
 header {
-    background: url("../images/headerLeaf.png") no-repeat bottom left, url("../images/headerStars1.png") no-repeat bottom left;
+    background: url("images/headerLeaf.png") no-repeat bottom left, url("images/headerStars1.png") no-repeat bottom left;
     background-size: contain, contain, contain;
 }
 nav {
@@ -1695,7 +1696,7 @@ footer .links {
         margin: 10px 0;
     }
     .editor-choice {
-        padding: 5px 30px;
+        padding: 5px 35px;
     }
     .try-form {
         width: 60%;
