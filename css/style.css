@@ -332,7 +332,7 @@ iframe.video {
     z-index: 5;
 }
 header {
-    background: url("images/headerLeaf.png") no-repeat bottom left, url("images/headerStars1.png") no-repeat bottom left;
+    background: url("../images/headerLeaf.png") no-repeat bottom left, url("../images/headerStars1.png") no-repeat bottom left;
     background-size: contain, contain, contain;
 }
 nav {
