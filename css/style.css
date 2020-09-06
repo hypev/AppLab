@@ -322,6 +322,10 @@ iframe.video {
     transform: scale(1);
     opacity: 0;
 }
+iframe.video.active {
+    width: 60%;
+    height: 60%;
+}
 .close-video {
     position: fixed;
     top: 0;
@@ -382,14 +386,14 @@ nav > .logo {
     -webkit-transition: all 0.8s cubic-bezier(1, 0, 0, 1);
     -o-transition: all 0.8s cubic-bezier(1, 0, 0, 1);
     transition: all 0.8s cubic-bezier(1, 0, 0, 1);
-    background-color: #2500f9;
+    background-color: #242f51;
     z-index: 2;
 }
 .menu-hamburger.F {
     content: "";
     width: 0%;
     height: 3px;
-    background: #2500f9;
+    background: #242f51;
     position: absolute;
     right: 0;
     -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -405,7 +409,7 @@ nav > .logo {
     content: "";
     width: 0%;
     height: 3px;
-    background: #2500f9;
+    background: #242f51;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -425,7 +429,7 @@ nav > .logo {
     content: "";
     width: 0%;
     height: 3px;
-    background: #2500f9;
+    background: #242f51;
     position: absolute;
     cursor: pointer;
     right: 0;
@@ -1375,6 +1379,10 @@ footer .links {
     }
 }
 @media (max-width: 767px) {
+    iframe.video.active {
+        width: 100%;
+        height: 30%;
+    }
     body {
         line-height: 1.2;
         font-size: 16px;
@@ -1430,7 +1438,7 @@ footer .links {
     }
     .header-text {
         text-align: center;
-        width: 100%;
+        width: 90%;
         margin: auto;
     }
     .header-text a {
@@ -1678,25 +1686,29 @@ footer .links {
     }
 }
 @media (max-width: 480px) {
+    iframe.video.active {
+        width: 100%;
+        height: 25%;
+    }
     .logo {
         font-size: 35px;
     }
     nav {
-        height: 100px;
+        height: 120px;
     }
     .menu-wrapper {
-        width: 50px;
-        height: 26px;
+        width: 40px;
+        height: 25px;
         right: 40px;
-        top: 40px;
+        top: 45px;
     }
     .header-text a {
         padding: 10px 5px;
-        display: block;
+        display: inline-block;
         margin: 10px 0;
     }
     .editor-choice {
-        padding: 5px 35px;
+        padding: 5px 30px;
     }
     .try-form {
         width: 60%;

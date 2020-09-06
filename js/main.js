@@ -11,15 +11,15 @@ $(document).ready(function () {
     else {
       $(".menuPage").css("clip-path", "circle(0% at 100% 0%)");
       $(".menuPage").css("-webkit-clip-path", "circle(0% at 100% 0%)");
-      $(".menu-hamburger.F, .menu-hamburger.S, .menu-hamburger.T").css("background", "#2500f9");
+      $(".menu-hamburger.F, .menu-hamburger.S, .menu-hamburger.T").css("background", "#242f51");
       $(".menu-hamburger.F, .menu-hamburger.S, .menu-hamburger.T").css("transition-delay", ".3s");
     }
   });
 
-  $(".menu-links .menu").on("click", "a", function (event) {
+  $(".menu-links").on("click", "a", function (event) {
     $(".menuPage").css("clip-path", "circle(0% at 100% 0%)");
     $(".menuPage").css("-webkit-clip-path", "circle(0% at 100% 0%)");
-    $(".menu-hamburger.F, .menu-hamburger.S, .menu-hamburger.T").css("background", "#2500f9");
+    $(".menu-hamburger.F, .menu-hamburger.S, .menu-hamburger.T").css("background", "#242f51");
     $(".menu-hamburger.F, .menu-hamburger.S, .menu-hamburger.T").css("transition-delay", ".3s");
     $(".menu-hamburger").removeClass('is-active');
 
@@ -95,8 +95,7 @@ $(document).ready(function () {
     closeBtn.css("opacity", "1");
     closeBtn.css("right", "5%");
     closeBtn.css("top", "5%");
-    video.css("width", "60%");
-    video.css("height", "60%");
+    video.toggleClass("active");
 
     setTimeout(() => {
       overlay.css("background-color", "rgba(0, 0, 0, 0.5)");
@@ -114,8 +113,7 @@ $(document).ready(function () {
     overlay.css("background-color", "rgba(0, 0, 0, 0)");
     videoPlayer.css("transform", "scale(0)");
     video.css("opacity", "0");
-    video.css("width", "0");
-    video.css("height", "0");
+    video.toggleClass("active");
     closeBtn.css("opacity", "0");
     closeBtn.css("right", "0");
     closeBtn.css("top", "0");
