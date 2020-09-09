@@ -327,6 +327,7 @@ iframe.video.active {
     height: 60%;
 }
 .close-video {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
