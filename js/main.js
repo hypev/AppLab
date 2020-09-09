@@ -92,12 +92,13 @@ $(document).ready(function () {
     var closeBtn = $(".close-video");
     videoPlayer.toggleClass("hide");
     overlay.css("display", "block");
-    closeBtn.css("opacity", "1");
-    closeBtn.css("right", "5%");
-    closeBtn.css("top", "5%");
+    closeBtn.css("display", "block");
     video.toggleClass("active");
 
     setTimeout(() => {
+      closeBtn.css("opacity", "1");
+      closeBtn.css("right", "5%");
+      closeBtn.css("top", "5%");
       overlay.css("background-color", "rgba(0, 0, 0, 0.5)");
       video.css("opacity", "1");
       videoPlayer.css("transform", "scale(1)");
@@ -120,6 +121,7 @@ $(document).ready(function () {
 
     setTimeout(() => {
       overlay.css("display", "none");
+      closeBtn.css("display", "none");
     }, 400);
   });
 
